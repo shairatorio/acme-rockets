@@ -1,3 +1,14 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer utilities {
+    /* 
+        first section - p-4 - 1rem > 16px = 16px+16px = 32px  
+        first h1 - text-3xl:line height - 2.25rem > 36px 
+        32px+36px = 68px 
+    */
+    .section-min-height {
+        min-height: calc(100vh - 68px)
+    }
+}
